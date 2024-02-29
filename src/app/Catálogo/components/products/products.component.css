@@ -16,7 +16,7 @@
 .productContent{
     display: flex;
     flex-flow: column wrap;
-    justify-items: center;
+    justify-items: space-between;
     align-items: center;
 }
 

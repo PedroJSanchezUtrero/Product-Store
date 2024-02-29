@@ -1,9 +1,6 @@
 .toolbar {
     height: 20%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    justify-items: center;
     flex-wrap: wrap;
 }
 
@@ -21,4 +18,26 @@
 
 .formField {
     width: 70%;
+}
+
+@media screen and (max-width: 880px){
+    .toolbar{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        gap: 1em;
+    }
+
+    .title{
+        width: 100%;
+        text-align: center;
+        font-size: 1.5em;
+        margin-top:5% ;
+    }
+
+    .categories{
+        width: 100%;
+        justify-content: center;
+    }
 }

@@ -2,10 +2,12 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TopBarComponent } from './components/top-bar/top-bar.component';
 import { ProductsComponent } from './components/products/products.component';
-import { MainPageComponent } from './pages/main-page.component';
+import { MainPageComponent } from './pages/catalogo-page/main-page.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatSelectModule} from '@angular/material/select';
 import {MatCardModule} from '@angular/material/card';
+import { ByProductsPageComponent } from './pages/by-products-page/by-products-page.component';
+import { CatalogoRoutingModule } from './catalogo-routing.module';
 
 
 
@@ -14,13 +16,15 @@ import {MatCardModule} from '@angular/material/card';
   declarations: [
     TopBarComponent,
     ProductsComponent,
-    MainPageComponent
+    MainPageComponent,
+    ByProductsPageComponent
   ],
   imports: [
     CommonModule,
     MatToolbarModule,
     MatSelectModule,
-    MatCardModule
+    MatCardModule,
+    CatalogoRoutingModule
   ],
   exports: [
     MainPageComponent
