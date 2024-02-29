@@ -1,0 +1,24 @@
+.toolbar {
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    flex-wrap: wrap;
+}
+
+.title {
+    width: 50%;
+    font-size: 2.5em;
+}
+
+.categories {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1%;
+}
+
+.formField {
+    width: 70%;
+}

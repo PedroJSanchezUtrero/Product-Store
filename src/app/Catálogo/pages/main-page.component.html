@@ -1,0 +1,8 @@
+<div class="container">
+    <nav>
+        <app-top-bar (filteredProducts)="getFilteredProduct($event)"></app-top-bar>
+    </nav>
+    <main>
+        <app-products [products]="products"></app-products>
+    </main>
+</div>

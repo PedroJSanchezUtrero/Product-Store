@@ -1,0 +1,13 @@
+<mat-toolbar color="primary" class="toolbar">
+    <h1 class="title">Catálogo de productos</h1>
+    <div class="categories">
+        <mat-form-field class="formField">
+            <mat-label>Categoría</mat-label>
+            <mat-select (valueChange)="filterProducts($event)">
+                <mat-option *ngFor="let category of categories" [value]="category">
+                    {{ category | titlecase}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+</mat-toolbar>
